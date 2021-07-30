@@ -44,7 +44,7 @@ for item in all_secs:
 
 		actual_chall = chall_result.group(1)
 
-		preprocess = actual_chall.replace(' ', '-').replace('_', '-').lower()
+		preprocess = actual_chall.replace(' ', '-').lower()
 		anchor = convert_to_md(preprocess)
 		
 		structure[actual_section].append('- [{}](#{})'.format(actual_chall, anchor))
